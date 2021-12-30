@@ -4,14 +4,27 @@
 
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
 
+See screenshot in answer-img directory.
+
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
+
+See screenshot in answer-img directory.
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
+
+For SLO of "monthly uptime", the SLIs could be:
+- The application should have 99.9% uptime during the month.
+
+For SLO of "request response time", the SLIs could be:
+- Requests served should have a response time of 500 milliseconds 
+
+
+
 
 ## Creating SLI metrics.
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
