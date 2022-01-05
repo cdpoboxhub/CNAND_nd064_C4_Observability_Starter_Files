@@ -31,10 +31,12 @@ For SLO of "monthly uptime", the SLIs could be:
 
 SLIs:
 - Number of successful HTTP requests out of total HTTP requests should be above 99.9%
+- The CPU should not be over 90% used before new pods are deployed.
+- The memory should not be over 90% used before new pods are deployed.
 
 For SLO of "request response time", the SLIs could be:
 - Requests served should have a response time of 500 milliseconds 
-
+- 
 
 
 
@@ -80,6 +82,11 @@ Description:
 
 ## Building KPIs for our plan
 *TODO*: Now that we have our SLIs and SLOs, create a list of 2-3 KPIs to accurately measure these metrics as well as a description of why those KPIs were chosen. We will make a dashboard for this, but first write them down here.
+
+Number of successfull HTTP requests fulfilled.
+Time to fill an HTTP request should be below 500 milliseconds.
+CPU usage percentage. To know when to deploy more pods.
+Memory usage percentage. To know what threshold to deploy more pods.
 
 ## Final Dashboard
 *TODO*: Create a Dashboard containing graphs that capture all the metrics of your KPIs and adequately representing your SLIs and SLOs. Include a screenshot of the dashboard here, and write a text description of what graphs are represented in the dashboard.  
