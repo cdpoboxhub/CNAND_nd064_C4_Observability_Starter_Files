@@ -1,5 +1,9 @@
 **Note:** For the screenshots, you can store all of your answer images in the `answer-img` directory.
 
+
+MY gitrepository is https://github.com/cdpoboxhub/CNAND_nd064_C4_Observability_Starter_Files/tree/master/Project_Starter_Files-Building_a_Metrics_Dashboard
+
+
 ## Verify the monitoring installation
 
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
