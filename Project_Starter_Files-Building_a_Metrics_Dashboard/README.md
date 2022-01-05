@@ -11,17 +11,21 @@ MY gitrepository is https://github.com/cdpoboxhub/CNAND_nd064_C4_Observability_S
 See screenshot in answer-img directory.
 
 [req1-componentsInstalled.jpg]
+![pod-services](answer-img/req1-componentsInstalled.jpg "a title")
+![pod-services](/answer-img/req1-componentsInstalled.jpg)
 
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
 
 See screenshot in answer-img directory.
 [req2-GrafanaLogin.jpg]
+![Home page](/answer-img/req2-GrafanaLogin.jpg)
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 
 [req3-promethuesOnGrafana.jpg]
+![Home page](/answer-img/req3-promethuesOnGrafana.jpg)
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
