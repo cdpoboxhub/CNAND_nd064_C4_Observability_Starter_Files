@@ -6,19 +6,27 @@
 
 See screenshot in answer-img directory.
 
+[req1-componentsInstalled.jpg]
+
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
 
 See screenshot in answer-img directory.
+[req2-GrafanaLogin.jpg]
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
+
+[req3-promethuesOnGrafana.jpg]
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
 
 For SLO of "monthly uptime", the SLIs could be:
 - The application should have 99.9% uptime during the month.
+
+SLIs:
+- Number of successful HTTP requests out of total HTTP requests should be above 99.9%
 
 For SLO of "request response time", the SLIs could be:
 - Requests served should have a response time of 500 milliseconds 
@@ -28,6 +36,13 @@ For SLO of "request response time", the SLIs could be:
 
 ## Creating SLI metrics.
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
+
+Number of failed HTTP requests can be measured from keeping track of 
+1. number of 40x errors returned vs 
+2. 20x success codes returned. 
+3. Time for succesfull span to complete from customer land on page to returned page.
+4. Time for successfull span trace to complete from customer click the "correct" button
+5. Time for successfull span trace to complete from customer click the "wrong" button on frontend-service webapage. 
 
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
